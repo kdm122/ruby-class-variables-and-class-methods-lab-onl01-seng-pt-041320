@@ -15,7 +15,7 @@ class Song
     @artist = artist
     @genre = genre
     binding.pry
-    @@artists.include?artist == false
+    if @@artists.include?artist == false
       @@artists << artist
     @@genres << genre
     @@songs << name
