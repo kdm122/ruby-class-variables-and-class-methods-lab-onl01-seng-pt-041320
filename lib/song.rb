@@ -1,3 +1,5 @@
+include binding.pry
+
 class Song 
   
   @@count = 0
@@ -12,6 +14,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
+    binding.pry
     @@artists.include?artist == false
       @@artists << artist
     @@genres << genre
