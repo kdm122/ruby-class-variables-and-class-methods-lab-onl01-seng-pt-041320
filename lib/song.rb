@@ -12,7 +12,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
-    @@artists << artist
+    @@artists.includ?artist << artist
     @@genres << genre
     @@songs << name
   end
